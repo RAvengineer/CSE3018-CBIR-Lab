@@ -6,8 +6,11 @@ imgFilePath = "../image_set_2/1.2.01.tiff";
 img = imread(imgFilePath);
 feat = lbp(img, 1);
 
+figure('Name',imgFilePath,'NumberTitle','off');
+imshow(img);
+title(imgFilePath);
 figure('Name','LBP features','NumberTitle','off');
 bar(feat);
-title(sprintf('LBP features for %s', imgFilePath))
+title('LBP features');
 xlabel('Feature Bins');
 ylabel('Frequency');

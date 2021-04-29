@@ -2,7 +2,7 @@
 
 clc;
 
-imgFilePath = "../image_set_2/1.2.01.tiff";
+imgFilePath = "../image_set_2/1.2.12.tiff";
 img = imread(imgFilePath);
 feat = lbp(img, 1);
 

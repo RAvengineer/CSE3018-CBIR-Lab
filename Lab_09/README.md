@@ -1,5 +1,5 @@
 # Extraction of Local Binary Patterns from an Image
-*Date: 08.14.2021*
+*Date: 08.04.2021*
 
 ### Files: 
 - **[lbp.m](./lbp.m):** MatLab function to extract bin-specific LBP features for a given image

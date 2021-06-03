@@ -7,11 +7,11 @@ addpath(genpath('./hog_feature_vector'));
 
 clc;
 % |#| Extract filenames of the images
-imgFiles = dir(getImgFilePath("*.jpg"));
+imgFiles = dir(getImgFilePath("*.tiff"));
 
 % Variables
 total_images = numel(imgFiles);
-queryImgFileName = imgFiles(6).name;
+queryImgFileName = imgFiles(40).name;
 queryImgFilePath = getImgFilePath(queryImgFileName);
 queryImgFeatures = hog_feature_vector(imread(queryImgFilePath));
 total_features = size(queryImgFeatures, 2);
@@ -63,6 +63,6 @@ end
 
 % |#| Function to retrieve file path
 function filePath = getImgFilePath(imgName)
-    imgSetPath = "../image_set_1/";
+    imgSetPath = "../image_set_2/";
     filePath = sprintf('%s%s', imgSetPath, imgName);
 end

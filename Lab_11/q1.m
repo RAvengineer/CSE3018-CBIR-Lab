@@ -27,6 +27,10 @@ for idx = 1:total_images
     fprintf('%d/%d \t Analyzing: %s',idx, total_images, imgFileName);
     imgPath = getImgFilePath(imgFiles(idx).name);
     features = hog_feature_vector(imread(imgPath));
+    % Since HOG has different feature vector size for different images,
+    % that can cause problems while adding to a matrix of defined size.
+    % Hence, add only those images to dataset matrix, which have same HOG
+    % feature vector size as the query_image
     if size(features, 2) == size(queryImgFeatures, 2)
         % Store the features in a matrix
         dataset(idx, 1:total_features+1) = [idx features];

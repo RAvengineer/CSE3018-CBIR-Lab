@@ -11,7 +11,7 @@ imgFiles = dir(getImgFilePath("*.jpg"));
 
 % Variables
 total_images = numel(imgFiles);
-queryImgFileName = imgFiles(13).name;
+queryImgFileName = imgFiles(6).name;
 queryImgFilePath = getImgFilePath(queryImgFileName);
 queryImgFeatures = hog_feature_vector(imread(queryImgFilePath));
 total_features = size(queryImgFeatures, 2);

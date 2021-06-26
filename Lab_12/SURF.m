@@ -1,5 +1,7 @@
 clf
 % Extract SURF Features
+% Modify current figure title
+set(gcf, 'Name','SURF keypoints','NumberTitle','off');
 %% Select Scene image
 [scene_name, file_path] = uigetfile('*.*', 'Select the scene image');
 scene_img_path = sprintf("%s%s", file_path, scene_name);
@@ -29,7 +31,7 @@ if target_name
     target_img = imread(target_path);
     target_img_gray = im2gray(target_img);
 else
-    disp('No scene image selected!');
+    disp('No target image selected!');
     return
 end
 % Extract SURF features for target image
@@ -39,6 +41,7 @@ imshow(target_img); hold on;
 title(sprintf('Target Image\n%s', target_name));
 % Extracting top 300 points
 plot(points2.selectStrongest(300));
+
 
 %% Matching images
 % Extracting the features
@@ -51,7 +54,7 @@ matchedPoints1 = vpts1(indexPairs(:,1));
 matchedPoints2 = vpts2(indexPairs(:,2));
 
 % Displaying the matching points
-figure; ax = axes;
+figure('Name','Matched points','NumberTitle','off'); ax = axes;
 showMatchedFeatures(scene_img, target_img, matchedPoints1, matchedPoints2, 'montage','Parent',ax);
 title(ax, 'Candidate point matches');
 legend(ax, 'Matched points 1','Matched points 2');

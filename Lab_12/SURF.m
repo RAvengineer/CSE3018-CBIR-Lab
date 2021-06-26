@@ -4,16 +4,17 @@ clf
 [scene_name, file_path] = uigetfile('*.*', 'Select the scene image');
 scene_img_path = sprintf("%s%s", file_path, scene_name);
 if scene_name
-    scene_img = im2gray(imread(scene_img_path));
+    scene_img = imread(scene_img_path);
+    scene_img_gray = im2gray(scene_img);
 else
     disp('No scene image selected!');
     return
 end
 % Extract SURF features for scene image
-points = detectSURFFeatures(scene_img);
+points = detectSURFFeatures(scene_img_gray);
 subplot(1, 2, 1);
 imshow(scene_img); hold on;
-title('Scene Image');
+title(sprintf('Scene Image\n%s', scene_name));
 % Extracting top 100 points
 plot(points.selectStrongest(100));
 
@@ -25,23 +26,24 @@ plot(points.selectStrongest(100));
 [target_name, file_path] = uigetfile('*.*', 'Select the target image');
 target_path = sprintf("%s%s", file_path, target_name);
 if target_name
-    target_img = im2gray(imread(target_path));
+    target_img = imread(target_path);
+    target_img_gray = im2gray(target_img);
 else
     disp('No scene image selected!');
     return
 end
 % Extract SURF features for target image
-points2 = detectSURFFeatures(target_img);
+points2 = detectSURFFeatures(target_img_gray);
 subplot(1, 2, 2);
 imshow(target_img); hold on;
-title('Target Image');
+title(sprintf('Target Image\n%s', target_name));
 % Extracting top 300 points
 plot(points2.selectStrongest(300));
 
 %% Matching images
 % Extracting the features
-[f1,vpts1] = extractFeatures(scene_img, points1);
-[f2,vpts2] = extractFeatures(target_img, points2);
+[f1,vpts1] = extractFeatures(scene_img_gray, points1);
+[f2,vpts2] = extractFeatures(target_img_gray, points2);
 
 % Retrieving the locations of matched points
 indexPairs = matchFeatures(f1,f2) ;

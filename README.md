@@ -1,6 +1,8 @@
 # CSE3018 CBIR Lab
 Lab Experiments under Lab component of **CSE3018 - Content-based Image and Video Retrieval** course at *Vellore Institute of Technology, Chennai*
 
+![license][b0] ![gh-repo-size][b1] ![lines-of-code][b2] ![last-commit][b3]
+
 ### Folders
 #### Image Datasets
 - **[image_set_1](./image_set_1/)**
@@ -24,3 +26,8 @@ Lab Experiments under Lab component of **CSE3018 - Content-based Image and Video
 ### Noteworthy References
 - [raj1603chdry/CSE3018-Content-Based-Image-and-Video-Retrieval-Lab | GitHub](https://github.com/raj1603chdry/CSE3018-Content-Based-Image-and-Video-Retrieval-Lab)
 - [MarshalLeeeee/Tamura-In-Python/referenced-matlab-code | GitHub](https://github.com/MarshalLeeeeee/Tamura-In-Python/tree/master/referenced-matlab-code)
+
+[b0]: https://img.shields.io/github/license/ravengineer/cse3018-cbir-lab?color=orange
+[b1]: https://img.shields.io/github/repo-size/ravengineer/cse3018-cbir-lab
+[b2]: https://img.shields.io/tokei/lines/github/ravengineer/cse3018-cbir-lab
+[b3]: https://img.shields.io/github/last-commit/ravengineer/cse3018-cbir-lab?color=yellowgreen

@@ -30,7 +30,7 @@ for idx = 0:total_images-1
     % Store the features in a matrix
     dataset(idx+1, 1:total_features+1) = [idx features];
     % Store the features in an Excel file
-    % writematrix(imgHistDetails, resultFile, 'WriteMode','append');
+    writematrix(imgHistDetails, resultFile, 'WriteMode','append');
 end
 
 for idx = 0:total_images-1

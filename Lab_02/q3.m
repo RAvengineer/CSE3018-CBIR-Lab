@@ -1,7 +1,7 @@
 % Question 3
 % Execute color plane slicing in RGB color space.
 
-img = imread('images/img0.jpg');
+img = imread('../image_set_1/img0.jpg');
 subplot(2,3,2);
 imshow(img);
 title('Original Image');

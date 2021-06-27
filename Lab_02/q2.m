@@ -4,7 +4,7 @@ Transform this image into other color spaces like CMY, HSV and Grayscale. Show
 all of them in a 2X2 subplot.
 %}
 
-img = imread('images/img0.jpg');
+img = imread('../image_set_1/img0.jpg');
 subplot(2,2,1);
 imshow(img);
 title('Original Image');

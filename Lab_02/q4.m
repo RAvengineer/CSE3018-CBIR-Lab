@@ -9,7 +9,7 @@ no. of color channels in an images. So 3 features.
 Altogether, every image will contain 18 features.
 %}
 
-img = imread('images/img0.jpg');
+img = imread('../image_set_1/img0.jpg');
 
 redChannel = img(:,:,1);
 greenChannel = img(:,:,2);

@@ -17,7 +17,7 @@ writematrix(labels, resultFile);
 
 for idx = 0:19
     imgName = sprintf("img%d.jpg", idx);
-    filePath = sprintf('images/%s', imgName);
+    filePath = sprintf('../image_set_1/%s', imgName);
     
     img = imread(filePath);
 

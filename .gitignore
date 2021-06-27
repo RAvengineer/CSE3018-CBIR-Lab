@@ -38,3 +38,12 @@ octave-workspace
 
 # Toolbox
 Lab_12/vlfeat-*
+
+# Image Dataset
+image_set_1/*.jpg
+image_set_2/*.tiff
+image_set_collection/
+
+# Lab
+Lab_FAT/
+

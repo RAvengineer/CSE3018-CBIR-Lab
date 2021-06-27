@@ -11,11 +11,11 @@
 ### Output
 Output of [q1.m](./q1.m) - RGB Features
 [![q1-output-1][1.1]][1.1]
-[![output-][1.2]][1.2]
+[![q1-output-2][1.2]][1.2]
 Output of [q2.m](./q2.m) - HSV Features
-[![output-][2.1]][2.1]
-[![output-][2.2]][2.2]
-[![output-][2.3]][2.3]
+[![q2-output-1][2.1]][2.1]
+[![q2-output-2][2.2]][2.2]
+[![q2-output3][2.3]][2.3]
 
 [1.1]: ./q1_output_1.jpg
 [1.2]: ./q1_output_2.jpg

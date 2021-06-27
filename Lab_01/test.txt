@@ -1,4 +1,0 @@
-Mean of Red Channel: 1.195024e+02
-Mean of Green Channel: 1.210169e+02
-Mean of Blue Channel: 1.332208e+02
-

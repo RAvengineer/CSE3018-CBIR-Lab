@@ -43,6 +43,7 @@ end
 
 figure('Name', 'Selected Images', 'NumberTitle', 'off');
 subplot(1,2,1); imshow(scene_img);  % Display scene image
+title(sprintf('Scene image\n%s', scene_name));
 
 
 %% Image Matching
@@ -52,6 +53,7 @@ subplot(1,2,1); imshow(scene_img);  % Display scene image
 % target_img_size = scene_img_size(1:2);    % => size(scene_img_gray)
 target_img = imresize(target_img, size(scene_img_gray));
 subplot(1,2,2); imshow(target_img); % Display target image
+title(sprintf('Target image\n%s', target_name));
 target_img_gray = single(im2gray(target_img));
 
 % --- NOTE: Images have to be the same size ---

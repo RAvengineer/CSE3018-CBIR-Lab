@@ -27,10 +27,22 @@ Personal recommendation to follow [VLFeat Toolbox installation guide for MATLAB]
 - **[SURF.m](./SURF.m):** MatLab code to extract & visually annotate the SURF feeature & keypoints
 
 ### Output
-![output-surf](./output-surf.jpg)
-![output-surf-matches](./output-surf-matches.jpg)
+Output of [SURF.m](./SURF.m)
+[![output-surf][su.1]][su.1]
+[![output-surf-matches][su.2]][su.2]
+Output of [SIFT.m](./SIFT.m)
+[![output-sift-frames-descriptors][si.1]][si.1]
+[![output-sift-selected][si.2]][si.2]
+[![output-sift-matches][si.3]][si.3]
 
 ### References
 - [Open file selection dialog box - MATLAB uigetfile](https://www.mathworks.com/help/matlab/ref/uigetfile.html)
 - [How to change the window title of a MATLAB plotting figure? - StackOverflow](https://stackoverflow.com/a/4684383)
 - [How can I customize the text of the figure window title in MATLAB? - MathWorks](https://www.mathworks.com/matlabcentral/answers/94968-how-can-i-customize-the-text-of-the-figure-window-title-in-matlab-7-6-r2008a#answer_104320)
+- Error: `Function IMRESIZE expected input number 2, MAP, to be a valid colormap. Valid colormaps cannot have values outside the range [0,1].` [Solution - MathWorks](https://uk.mathworks.com/matlabcentral/answers/523708-function-imresize-expected-input-number-2-map-to-be-a-valid-colormap-valid-colormaps-cannot-have#answer_430942)
+
+[su.1]: ./output-surf.jpg
+[su.2]: ./output-surf-matches.jpg
+[si.1]: ./output-sift-frames-descriptors.jpg
+[si.2]: ./output-sift-selected.jpg
+[si.3]: ./output-sift-matches.jpg

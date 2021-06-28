@@ -27,10 +27,10 @@ Personal recommendation to follow [VLFeat Toolbox installation guide for MATLAB]
 - **[SURF.m](./SURF.m):** MatLab code to extract & visually annotate the SURF feeature & keypoints
 
 ### Output
-Output of [SURF.m](./SURF.m)
+Output of [SURF.m](./SURF.m)  
 [![output-surf][su.1]][su.1]
 [![output-surf-matches][su.2]][su.2]
-Output of [SIFT.m](./SIFT.m)
+Output of [SIFT.m](./SIFT.m)  
 [![output-sift-frames-descriptors][si.1]][si.1]
 [![output-sift-selected][si.2]][si.2]
 [![output-sift-matches][si.3]][si.3]
